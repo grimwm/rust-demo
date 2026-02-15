@@ -1,7 +1,12 @@
-.PHONY: build clean
+.PHONY: build clean test
 
 build:
 	rustc hello.rs
 
 clean:
 	rm hello
+	rm -f hello_test
+
+test:
+	rustc --test hello.rs -o hello_test
+	./hello_test
