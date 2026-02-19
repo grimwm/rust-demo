@@ -4,7 +4,7 @@ build:
 	rustc hello.rs
 
 clean:
-	rm hello
+	rm -f hello
 	rm -f hello_test
 
 test:
